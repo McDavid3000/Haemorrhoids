@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texturemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playership.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playerbullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playerbulletpool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debris.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animatedsprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smokeanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debrismanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="particle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="particleemitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pooparticle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pooparticleemitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="haemorrhoid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bloodparticleemitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bloodparticle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gamestate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="introstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menustate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="highscorestate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iniparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controlstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inputhandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texturemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playership.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playerbullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playerbulletpool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debris.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="animatedsprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smokeanimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debrismanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="particle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="particleemitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pooparticle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pooparticleemitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bloodparticleemitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bloodparticle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="haemorrhoid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gamestate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="introstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="background.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menustate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="highscorestate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="controlstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

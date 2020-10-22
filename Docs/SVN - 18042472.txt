@@ -1,0 +1,1045 @@
+Revision: 711
+Author: yfk3228
+Date: Wednesday, October 7, 2020 4:17:23 PM
+Message:
+Unused comments removed.
+Control screen added, settings button removed.
+Final commit before gold submission.
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Logos/controlscreen.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/controlsbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Logos/controlscreen.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Game/highscores.csv
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/background.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/background.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticleemitter.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/controlstate.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/controlstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debris.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/gamestate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/highscorestate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/highscorestate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/introstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/introstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particleemitter.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticleemitter.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.cpp
+
+Revision: 685
+Author: yfk3228
+Date: Wednesday, October 7, 2020 2:58:51 PM
+Message:
+Moved assets into game folder, changed address of assets in code.
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/scream.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Postmortem.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Postmortem.pdf
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Animations
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Animations/haemorrhoidanimation.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Animations/smokeanimation.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/backbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/background1.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/bloodparticle.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/creditsbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/highscoresbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/largepoop.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/medpoop.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/playbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/playerbullet.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/pooparticle.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/quitbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/settingsbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/ship.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Art/smallpoop.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Fonts
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Fonts/debugfont.ttf
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Logos
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Logos/AUT.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Logos/FMOD.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Logos/SDL.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Logos/startscreen.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Logos/startscreenship.png
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/deathfart.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/engine.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/haemorrhoiddestroyed.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/haemorrhoiddestroyed1.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/introfart.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/laser.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/musicloop.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/poopsplat.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/scream.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Game/Assets/Sound/startfart.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Game/highscores.csv
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticle.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/highscorestate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/introstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticle.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/readme.txt
+
+Revision: 678
+Author: yfk3228
+Date: Wednesday, October 7, 2020 12:05:59 PM
+Message:
+Debug features added. CLick top right hand corner of screen to use. Readme updated accordingly.
+
+
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/readme.txt
+
+Revision: 671
+Author: yfk3228
+Date: Wednesday, October 7, 2020 10:58:54 AM
+Message:
+Postmortem nearly complete.
+Highscore system started, CSV files included.
+IniParser started.
+Non functional menu buttons disabled 
+readme.txt added
+
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Postmortem.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/~$stmortem.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Game/foo.csv
+Added : /students/devin.grant-miles/Haemorrhoids/Game/highscores.csv
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/iniparser.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/iniparser.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/readme.txt
+
+Revision: 667
+Author: yfk3228
+Date: Wednesday, October 7, 2020 1:51:26 AM
+Message:
+Sound effects added.
+Button sounds implemented.
+Debris spawning bug fixed. 
+Smoke animation while dead bug fixed.
+Shooting while dead bug fixed.
+Haemorrhoid respawn bug fixed.
+
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/deathfart.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/musicloop.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/startfart.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.cpp
+
+Revision: 650
+Author: yfk3228
+Date: Tuesday, October 6, 2020 7:13:23 PM
+Message:
+Music added to game. Needs to be stopped properly however.
+Fixed haemorrhoid AnimatedSprite.
+Pause functionality added.
+Post mortem doc started + readme.
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Assets/Animations/haemorrhoidanimation.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/musicloop.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Postmortem.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/readme.txt
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.h
+
+Revision: 633
+Author: yfk3228
+Date: Tuesday, October 6, 2020 9:10:24 AM
+Message:
+Preloaded high scores added so that game can be won
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+
+Revision: 622
+Author: yfk3228
+Date: Monday, October 5, 2020 6:24:30 PM
+Message:
+High score state added. Access through main menu. Input for name is through console at end of game currently.
+Animated Haemorrhoid sprite added. Buggy collisions present though. 
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Animations/haemorrhoidanimation.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Animations/poopanimation.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/backbutton.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/highscorestate.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/highscorestate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particle.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbullet.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbullet.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.cpp
+
+Revision: 606
+Author: yfk3228
+Date: Sunday, October 4, 2020 5:35:54 PM
+Message:
+Memory leaks fixed - related to member objects (debris manager and buttons)
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+
+Revision: 602
+Author: yfk3228
+Date: Sunday, October 4, 2020 12:59:41 PM
+Message:
+Added alternate haemorrhoid asset.
+Fixed BloodParticleEmitter bug related to array out of bound
+updated controller input to DPad
+Altered playership and playership member initialization after release build optimization issues
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/haemorrhoid2.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticleemitter.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticleemitter.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+
+Revision: 599
+Author: yfk3228
+Date: Sunday, October 4, 2020 9:54:59 AM
+Message:
+Button assets added to repo + laser sound.
+Changed particle system so that particle emitters are created with a fixed amount of particles. Object pool. Still need to implement this for emitters in the PlayState.
+Implemented changes to debris and haemorrhoid so that they do not spawn in the center on the player.
+Implemented MenuState and buttons so now game can be restarted after losing.
+Mouse input used in input handler.
+IntroState implemented.
+Player bullets now each have own sprite which has solved the shared sprite bug.
+Bullets now have a limited range.
+Game now has HUD with lives, levels and score.
+Score kept roughly per debris destroyed. needs to be fine tuned for different sized debris.
+levels influence number of debris spawned.
+
+
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/creditsbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/highscoresbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/playbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/quitbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/settingsbutton.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/laser.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticleemitter.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticleemitter.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/introstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/introstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particle.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particleemitter.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particleemitter.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbullet.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbullet.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticleemitter.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticleemitter.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.cpp
+
+Revision: 549
+Author: yfk3228
+Date: Thursday, October 1, 2020 9:44:18 PM
+Message:
+SDL TTF implemented for lives and score.
+Playership given a score and lives variable and drawn onscreen.
+Gameplay loop established once all debris destroyed. Methods to check all debris dead added.
+Basic menu inputhandler created and useable.
+
+
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Fonts
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Fonts/debugfont.ttf
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+
+Revision: 547
+Author: yfk3228
+Date: Thursday, October 1, 2020 6:38:38 PM
+Message:
+IntroState added with logos and alpha blending.
+game start scaling animation implemented.
+Menu state started - no functionality yet.
+Sound effects added.
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Logos
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Logos/AUT.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Logos/FMOD.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Logos/SDL.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Logos/startscreen.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Logos/startscreenship.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/introfart.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/background.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/background.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/introstate.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/introstate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/menustate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.h
+
+Revision: 504
+Author: yfk3228
+Date: Thursday, October 1, 2020 7:36:47 AM
+Message:
+Game state finite state machine implemented. State machine within game engine. Play state running. Rest of states need to be implemented.
+Also some PNG particle and debris assets added to file.
+
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/bloodparticle.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/corn.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/cornparticle.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/damagedcorn.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Game Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/GameStates.vsdx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/Browse.VC.opendb
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/175d4c5d62df4f38
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/1b2b69d3b81cfa3e
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/2789e5857fcc7ffe
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/566b8602b6ebf31d
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/56e5ee59f85f3829
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/6b049ef0fd985139
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/8266abd2cc4afd9c
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/9933e97bb4f0b7a7
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/9d8fc7382be5f20b
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/a22ace6d0ec34e6b
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/bd8e2460de8b2327
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/df6a7b49ab7adb5
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/f61a75d0bf1d2043
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticle.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticle.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticleemitter.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/bloodparticleemitter.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/gamestate.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/gamestate.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playstate.h
+
+Revision: 380
+Author: yfk3228
+Date: Wednesday, September 23, 2020 4:07:47 PM
+Message:
+readme.txt added for running Visual Studio solution 
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Source/readme.txt
+
+Revision: 372
+Author: yfk3228
+Date: Wednesday, September 23, 2020 2:25:06 PM
+Message:
+Working directories fixed
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+
+Revision: 369
+Author: yfk3228
+Date: Wednesday, September 23, 2020 2:10:27 PM
+Message:
+
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/lib/x86/fmodL_vc.lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/lib/x86/fmod_vc.lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/lib/x86/SDL2.lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/lib/x86/SDL2main.lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/lib/x86/SDL2test.lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/SDL2_image.lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib/x86/SDL2_ttf.lib
+
+Revision: 364
+Author: yfk3228
+Date: Wednesday, September 23, 2020 1:48:59 PM
+Message:
+
+----
+Deleted : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/x64
+Deleted : /students/devin.grant-miles/Haemorrhoids/Source/x64
+
+Revision: 363
+Author: yfk3228
+Date: Wednesday, September 23, 2020 1:46:00 PM
+Message:
+Removed unneeded docs
+----
+Deleted : /students/devin.grant-miles/Haemorrhoids/Docs/Development Journal.docx
+Deleted : /students/devin.grant-miles/Haemorrhoids/Docs/Pitch2.docx
+
+Revision: 362
+Author: yfk3228
+Date: Wednesday, September 23, 2020 1:45:31 PM
+Message:
+Removed further unnecessary files that were added initially by mistake due to wrong debug target
+----
+Deleted : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids
+
+Revision: 361
+Author: yfk3228
+Date: Wednesday, September 23, 2020 1:42:35 PM
+Message:
+Removed unnecessary docs
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Reflection notes.docx
+
+Revision: 360
+Author: yfk3228
+Date: Wednesday, September 23, 2020 1:39:27 PM
+Message:
+
+----
+Deleted : /students/devin.grant-miles/Haemorrhoids/Assets/Art/background.png
+Deleted : /students/devin.grant-miles/Haemorrhoids/Assets/Art/poop.png
+Deleted : /students/devin.grant-miles/Haemorrhoids/Assets/Sprites/playership.png
+Deleted : /students/devin.grant-miles/Haemorrhoids/Debug
+
+Revision: 359
+Author: yfk3228
+Date: Wednesday, September 23, 2020 1:38:55 PM
+Message:
+Removed unnecessary Debug file and dll files.
+Removed unused sprites and art
+Amended TDD and GDD
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Game Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+
+Revision: 355
+Author: yfk3228
+Date: Wednesday, September 23, 2020 11:41:52 AM
+Message:
+Libraries and includes added to game Lib file for middleware: FMOD, SDL, SDL_Image, SDL_TTF
+Some sound assets added to file.
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/engine.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/haemorrhoiddestroyed.wav
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/haemorrhoiddestroyed1.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Game Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/~$$GameStates.~vsdx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/~$Pitch2.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod.cs
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod.hpp
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_codec.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_common.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_dsp.cs
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_dsp.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_dsp_effects.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_errors.cs
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_errors.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/inc/fmod_output.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/lib/x86
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/lib/x86/fmod.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/FMOD/lib/x86/fmodL.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_assert.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_atomic.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_audio.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_bits.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_blendmode.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_clipboard.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config.h.cmake
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config.h.in
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_android.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_iphoneos.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_macosx.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_macosx.h.orig
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_minimal.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_pandora.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_psp.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_windows.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_winrt.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_config_wiz.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_copying.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_cpuinfo.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_egl.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_endian.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_error.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_events.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_filesystem.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_gamecontroller.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_gesture.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_haptic.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_hints.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_joystick.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_keyboard.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_keycode.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_loadso.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_log.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_main.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_messagebox.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_metal.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_mouse.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_mutex.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_name.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengl.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengl_glext.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengles.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengles2.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengles2_gl2.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengles2_gl2ext.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengles2_gl2platform.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_opengles2_khrplatform.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_pixels.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_platform.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_power.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_quit.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_rect.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_render.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_revision.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_rwops.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_scancode.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_sensor.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_shape.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_stdinc.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_surface.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_system.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_syswm.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_assert.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_common.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_compare.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_crc32.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_font.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_fuzzer.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_harness.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_images.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_log.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_md5.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_memory.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_test_random.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_thread.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_timer.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_touch.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_types.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_version.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_video.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/SDL_vulkan.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/begin_code.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/include/close_code.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/lib/x86
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL/lib/x86/SDL2.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/include
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/include/SDL_image.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/LICENSE.jpeg.txt
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/LICENSE.png.txt
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/LICENSE.tiff.txt
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/LICENSE.webp.txt
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/LICENSE.zlib.txt
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/SDL2_image.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/libjpeg-9.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/libpng16-16.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/libtiff-5.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/libwebp-7.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_Image/lib/x86/zlib1.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/include
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/include/SDL_ttf.h
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib/x86
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib/x86/LICENSE.freetype.txt
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib/x86/LICENSE.zlib.txt
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib/x86/SDL2_ttf.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib/x86/libfreetype-6.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Lib/SDL_TTF/lib/x86/zlib1.dll
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoid.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+
+Revision: 335
+Author: yfk3228
+Date: Tuesday, September 22, 2020 4:52:04 PM
+Message:
+Committing latest changes to ensure program is working on uni computers.
+Amended TDD. 
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+
+Revision: 327
+Author: yfk3228
+Date: Tuesday, September 22, 2020 8:19:38 AM
+Message:
+TDD updated. 
+Some alpha blending experimented with in particle functionality.
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particle.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particle.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particleemitter.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticleemitter.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.h
+
+Revision: 315
+Author: yfk3228
+Date: Saturday, September 19, 2020 12:46:09 PM
+Message:
+Heamorrhoid art asset added.
+Updated and amended game docs.
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/haemorrhoid.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Game Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Pitch.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Reflection notes.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+
+Revision: 312
+Author: yfk3228
+Date: Friday, September 18, 2020 11:20:39 PM
+Message:
+Rotating AnimatedSprite completed! Codes needs cleaning up and commenting but otherwise functional.
+Sound asset added for exploding debris.
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Assets/Art/medpoop.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Assets/Art/playerbullet.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Assets/Art/smallpoop.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound/poopsplat.wav
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.h
+
+Revision: 308
+Author: yfk3228
+Date: Friday, September 18, 2020 8:13:13 AM
+Message:
+Particle effects added for some debris. Still requires lifecycle management code to be implemented.
+Assets for particles and debris added.
+
+
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/pooparticle.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/smallpoop.png
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Reflection notes.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particle.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particle.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particleemitter.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/particleemitter.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticle.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticle.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticleemitter.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/pooparticleemitter.h
+
+Revision: 299
+Author: yfk3228
+Date: Thursday, September 17, 2020 8:59:41 AM
+Message:
+TDD updates:
+Designs added for bullet and bulletpool. 
+High level design added for particle effects.
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+
+Revision: 298
+Author: yfk3228
+Date: Thursday, September 17, 2020 6:27:31 AM
+Message:
+Added TDD details for gameplay loop and game cycle loop.
+Refined debrismanager functions: collisions, spawning.
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+
+Revision: 295
+Author: yfk3228
+Date: Wednesday, September 16, 2020 11:40:32 AM
+Message:
+TDD updated with DebrisManager and Debris object hierarchy. A start to the DebrisManager and Debris also roughly implemented in solution. Still needs refinement.
+Animated sprite for exhaust roughly implements and tested. Still needs rotation functionality refined and linked to thrust input.
+Some associated assets and stand-in assets added also for the above features.
+Brief reflection notes added.
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Animations/smokeanimation.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/largepoop.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/medpoop.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/poop.png
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Reflection notes.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/~$flection notes.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/animatedsprite.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debris.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debris.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/debrismanager.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/smokeanimation.h
+Modified : /students/devin.grant-miles/SpaceInvaders/Framework/game.cpp
+
+Revision: 293
+Author: yfk3228
+Date: Monday, September 14, 2020 9:20:23 AM
+Message:
+Some art assets added. TDD updated with game states flowchart.
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Animations
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/playerbullet.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/startscreen.tif
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sound
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Game Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/GameStates.vsdx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Pitch.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/~$chnical Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/~$me Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Lib
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/1368d93b03c644d8
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/1aad7cd0d14cb667
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/1abaa9d830d0dee4
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/28b38fa39021dfc8
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/2fcf2c1c4fa619c7
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/373adb2a88793571
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/5ce8a8c639cdbc3
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/6254cfdb1c27bc54
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/6458d101ac271764
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/6752eb72065ba6d6
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/766d390f0a18ba9e
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/8f3ec411684d35f1
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/9831a39a38a73943
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/a552edeb8c968372
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/a77b86cf0dda4858
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/a97d67bf3806ba6c
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/abfd9966a6b4f0c3
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/b10e80e67f4c483c
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/b111e2c5feb4e31e
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/bcce406bb7d7dbd4
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/c57e0f81994870b9
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/d18d42aa3cc6c1be
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/df15687a14cba748
+Added : /students/devin.grant-miles/Haemorrhoids/Source/.vs/haemorrhoids/v15/ipch/AutoPCH/ebb32a9d73e870bc
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbullet.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbullet.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playerbulletpool.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.cpp
+Modified : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/x64
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/x64/Debug
+Added : /students/devin.grant-miles/Haemorrhoids/Source/x64
+Added : /students/devin.grant-miles/Haemorrhoids/Source/x64/Debug
+Added : /students/devin.grant-miles/Haemorrhoids/Temp
+Added : /students/devin.grant-miles/Haemorrhoids/Temp/Debug
+Added : /students/devin.grant-miles/Haemorrhoids/Temp/Debug/haemorrhoids
+Added : /students/devin.grant-miles/Haemorrhoids/Temp/Release
+Added : /students/devin.grant-miles/Haemorrhoids/Test
+
+Revision: 283
+Author: yfk3228
+Date: Saturday, September 12, 2020 11:20:37 AM
+Message:
+Art assets added. More content added to pitch, GDD, TDD
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/background.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/background1.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Art/ship.png
+
+Revision: 279
+Author: yfk3228
+Date: Friday, September 11, 2020 9:09:41 AM
+Message:
+Game Design Document.docx, Technical Design Document.docx, Pitch.docx, and secondary Pitch2.docx added and updated
+----
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Game Design Document.docx
+Modified : /students/devin.grant-miles/Haemorrhoids/Docs/Pitch.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Pitch2.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Technical Design Document.docx
+
+Revision: 272
+Author: yfk3228
+Date: Tuesday, September 8, 2020 5:35:17 PM
+Message:
+Docs added for: Pitch, GDD, Journal
+----
+Added : /students/devin.grant-miles/Haemorrhoids/Docs
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Development Journal.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Game Design Document.docx
+Added : /students/devin.grant-miles/Haemorrhoids/Docs/Pitch.docx
+
+Revision: 270
+Author: yfk3228
+Date: Tuesday, September 8, 2020 10:17:18 AM
+Message:
+PNG assets taken off SVN ignore list and added to repository.
+----
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/assets/alienenemy.png
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/assets/playerbullet.png
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/assets/playership.png
+Added : /students/devin.grant-miles/Haemorrhoids/Assets
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sprites
+Added : /students/devin.grant-miles/Haemorrhoids/Assets/Sprites/playership.png
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/assets
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/assets/alienenemy.png
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/assets/playerbullet.png
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/assets/playership.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/alienenemy.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/alienfragment.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/animation/explosion.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/biggerstar.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/playerbullet.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/playerbullettrail.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/playermissile.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/playership.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/smallstar.png
+Added : /students/devin.grant-miles/SpaceInvaders/Debug/assets/splashscreens/fmodlogo.png
+
+Revision: 269
+Author: yfk3228
+Date: Tuesday, September 8, 2020 10:15:19 AM
+Message:
+Individual game (Haemorrhoids) environment set up:
+
+GP2DFramework set up. 
+SDL2 set up.
+FMOD set up.
+SDL2_ttf set up.
+Removed existing memory leaks.
+Vector2 added. 
+Playership class added and drawing in Game.
+----
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/SDL2.dll
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/SDL2_image.dll
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/fmod.dll
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/libpng16-16.dll
+Added : /students/devin.grant-miles/GP2DFramework2020/Debug/zlib1.dll
+Added : /students/devin.grant-miles/Haemorrhoids
+Added : /students/devin.grant-miles/Haemorrhoids/Debug
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/SDL2.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/SDL2_image.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/libpng16-16.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Debug/zlib1.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game
+Added : /students/devin.grant-miles/Haemorrhoids/Game/SDL2.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/SDL2_image.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/SDL2_ttf.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/fmod.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids/SDL2.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids/SDL2_image.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids/SDL2_ttf.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids/fmod.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids/libfreetype-6.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids/libpng16-16.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/haemorrhoids/zlib1.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/libfreetype-6.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/libpng16-16.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Game/zlib1.dll
+Added : /students/devin.grant-miles/Haemorrhoids/Source
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/backbuffer.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/entity.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/game.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/haemorrhoids.vcxproj
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/inputhandler.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/logmanager.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/logmanager.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/main.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/playership.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/sprite.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/texture.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/texture.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/texturemanager.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/texturemanager.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/vector2.cpp
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids/vector2.h
+Added : /students/devin.grant-miles/Haemorrhoids/Source/haemorrhoids.sln
+Modified : /students/devin.grant-miles/SpaceInvaders/Framework/alienfragmentemitter.cpp
+Modified : /students/devin.grant-miles/SpaceInvaders/Framework/main.cpp
+
